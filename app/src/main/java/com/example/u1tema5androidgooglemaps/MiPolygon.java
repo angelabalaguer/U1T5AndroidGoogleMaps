@@ -96,7 +96,7 @@ public class MiPolygon  extends AppCompatActivity implements OnMapReadyCallback,
                 MarkerOptions markerOptions=new MarkerOptions().position(latLng);
                 Marker marker=gMap.addMarker(markerOptions);
                 latLngList.add(latLng);
-                markerList.add(marker);
+                markerList.add(marker);//pruebaaa
             }
         });
     }
