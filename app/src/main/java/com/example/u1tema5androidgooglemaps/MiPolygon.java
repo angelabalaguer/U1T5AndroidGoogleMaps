@@ -13,6 +13,8 @@ import android.widget.SeekBar;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.Circle;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -97,6 +99,16 @@ public class MiPolygon  extends AppCompatActivity implements OnMapReadyCallback,
                 Marker marker=gMap.addMarker(markerOptions);
                 latLngList.add(latLng);
                 markerList.add(marker);//pruebaaa
+            }
+        });
+        gMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
+            @Override
+            public void onMapLongClick(LatLng latLng) {
+                CircleOptions circleOptions = new CircleOptions()
+                        .center(latLng)
+                        .radius(300000);//En metros
+                Circle circle=gMap.addCircle(circleOptions);
+                circle.setStrokeWidth(8);
             }
         });
     }

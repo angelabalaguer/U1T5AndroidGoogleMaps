@@ -25,4 +25,17 @@ public class MainActivity extends AppCompatActivity {
   public void MiPolygon(View view) {
     startActivity(new Intent(this,MiPolygon.class));
   }
+
+    public void MapaCalor(View view) {
+      startActivity(new Intent(this,MapaCalor.class));
+    }
+
+    public void MiClusterMap(View view) {
+      startActivity(new Intent(this,MiClusterMap.class));
+    }
+
+  public void DistanciaDosPuntos(View view) {
+    startActivity(new Intent(this,DistanciaDosPuntos.class));
+
+  }
 }

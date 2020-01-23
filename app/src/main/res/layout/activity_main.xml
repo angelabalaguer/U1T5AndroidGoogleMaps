@@ -26,5 +26,22 @@
         android:layout_height="wrap_content"
         android:text="Polygon"
         android:onClick="MiPolygon"/>
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Mapa de Calor"
+    android:onClick="MapaCalor"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ClusterMapque"
+        android:onClick="MiClusterMap"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Distancia Lineal"
+        android:onClick="DistanciaDosPuntos"/>
 
 </LinearLayout>
